@@ -1,0 +1,117 @@
+body {
+  display: inline;
+  flex: center;
+  margin: 0 auto;
+  width: 600px;
+  height: 700px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 40px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://astrotourismwa.com.au/wp-content/uploads/2018/12/Milky-Way-Galaxy-1080x675.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 600px 700px;
+}
+
+.search-form {
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+  width: 30px;
+  font-size: 30px;
+  border-radius: 10px;
+  border: transparent;
+  background-color: transparent;
+}
+
+h1 {
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+  display: block;
+}
+
+h1 a {
+  color: #f2f2f1;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  color: rgb(175, 207, 235);
+}
+
+h1 .celcius {
+  font-size: 60px;
+  color: #f2f2f1;
+  text-decoration: none;
+}
+
+h1 .fahrenheit {
+  font-size: 20px;
+  color: #f2f2f1;
+  text-decoration: none;
+}
+
+h1 .actual-weather {
+  color: #fff;
+  width: 5px;
+  margin-left: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 10px;
+}
+
+.city {
+  font-size: 40px;
+  color: #fff;
+}
+
+h3 {
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 10px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  text-align: left;
+  font-size: medium;
+  font-style: italic;
+  color: #fff;
+  margin-top: 20px;
+  position: relative;
+  right: -30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
+.hum,
+.humid,
+.percentage,
+.wind-speed,
+.wind,
+.km,
+.weather-description {
+  font-size: 10px;
+  color: rgb(236, 241, 247);
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-shadow: 10px;
+}
