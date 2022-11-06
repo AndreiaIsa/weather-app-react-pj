@@ -5,8 +5,8 @@ import "./Weather.css";
 let weatherData = {
   temperature: 10,
   city: "Machico",
-  date: "Thursday 3 November 2022",
-  time: "21:39",
+  date: "Sunday 6 November 2022",
+  time: "21:00",
   humidity: 12,
   wind: 1,
   description: "Scattered clouds",
@@ -64,14 +64,14 @@ export default function Weather(props) {
 
         <ul>
           <li>
-            <span className="hum">Humidity:</span>
+            <span className="hum">Humidity: </span>
             <span className="humid">{weatherData.humidity}</span>
             <span className="percentage">%</span>
           </li>
           <li>
-            <span className="wind-speed">Wind:</span>
+            <span className="wind-speed">Wind: </span>
             <span className="wind">{weatherData.wind}</span>
-            <span className="km">Km/h</span>
+            <span className="km"> Km/h</span>
           </li>
           <li>
             <span className="weather-description">
@@ -84,10 +84,11 @@ export default function Weather(props) {
       <section className="next-days">
         <span className="weather-5days">
           <div className="row">
-            <div className="col-2">🍃</div>
             <div className="col-2">🌥️</div>
             <div className="col-2">🌥️</div>
             <div className="col-2">🌥️</div>
+            <div className="col-2">🌥️</div>
+            <div className="col-2">🌦️</div>
             <div className="col-2">🌦️</div>
           </div>
         </span>
@@ -99,21 +100,24 @@ export default function Weather(props) {
             <div className="col-2">Tuesday</div>
             <div className="col-2">Wednesday</div>
             <div className="col-2">Thursday</div>
+            <div className="col-2">Friday</div>
           </div>
         </span>
 
         <span className="daily-temperatures">
           <div className="row">
-            <div className="col-1">26 °</div>
-            <div className="col-1">21 °</div>
-            <div className="col-1">24 °</div>
-            <div className="col-1">20 °</div>
-            <div className="col-1">24 °</div>
-            <div className="col-1">20 °</div>
-            <div className="col-1">23 °</div>
-            <div className="col-1">20 °</div>
-            <div className="col-1">25 °</div>
-            <div className="col-1">20 °</div>
+            <div className="col-1">26°</div>
+            <div className="col-1">21°</div>
+            <div className="col-1">24°</div>
+            <div className="col-1">20°</div>
+            <div className="col-1">24°</div>
+            <div className="col-1">20°</div>
+            <div className="col-1">23°</div>
+            <div className="col-1">20°</div>
+            <div className="col-1">25°</div>
+            <div className="col-1">20°</div>
+            <div className="col-1">20°</div>
+            <div className="col-1">24°</div>
           </div>
         </span>
       </section>

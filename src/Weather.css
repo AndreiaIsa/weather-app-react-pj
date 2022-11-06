@@ -24,8 +24,8 @@ body {
 
 button {
   width: 30px;
-  font-size: 30px;
-  border-radius: 10px;
+  font-size: 40px;
+  padding: 0;
   border: transparent;
   background-color: transparent;
 }
@@ -53,15 +53,15 @@ h1 .celcius {
 }
 
 h1 .fahrenheit {
-  font-size: 20px;
+  font-size: 30px;
   color: #f2f2f1;
   text-decoration: none;
+  margin-left: 5px;
 }
 
 h1 .actual-weather {
   color: #fff;
-  width: 5px;
-  margin-left: 20px;
+  font-size: 60px;
 }
 
 h2 {
@@ -114,4 +114,37 @@ li:first-letter {
   font-weight: bold;
   margin-bottom: 40px;
   text-shadow: 10px;
+}
+
+.next-days {
+  width: 500px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  color: white;
+  margin-top: 40px;
+}
+
+.weather-5days {
+  font-size: 20px;
+}
+
+.week-days,
+.daily-temperatures {
+  font-size: 13px;
+}
+
+footer {
+  color: white;
+  font-size: 10px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
 }
