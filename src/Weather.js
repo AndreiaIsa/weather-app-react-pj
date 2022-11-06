@@ -123,7 +123,11 @@ export default function Weather(props) {
       </section>
 
       <footer>
-        <a href="https://github.com/AndreiaIsa/weather-app-react-pj">
+        <a
+          href="https://github.com/AndreiaIsa/weather-app-react-pj"
+          target="_blank"
+          rel="noreferrer"
+        >
           Open-source code
         </a>{" "}
         by Andreia Gonçalves
