@@ -60,47 +60,6 @@ export default function WeatherInfo(props) {
           </li>
         </ul>
       </section>
-
-      <section className="next-days">
-        <span className="weather-5days">
-          <div className="row">
-            <div className="col-2">🌥️</div>
-            <div className="col-2">🌥️</div>
-            <div className="col-2">🌥️</div>
-            <div className="col-2">🌥️</div>
-            <div className="col-2">🌦️</div>
-            <div className="col-2">🌦️</div>
-          </div>
-        </span>
-
-        <span className="week-days">
-          <div className="row">
-            <div className="col-2">Sunday</div>
-            <div className="col-2">Monday</div>
-            <div className="col-2">Tuesday</div>
-            <div className="col-2">Wednesday</div>
-            <div className="col-2">Thursday</div>
-            <div className="col-2">Friday</div>
-          </div>
-        </span>
-
-        <span className="daily-temperatures">
-          <div className="row">
-            <div className="col-1">26°</div>
-            <div className="col-1">21°</div>
-            <div className="col-1">24°</div>
-            <div className="col-1">20°</div>
-            <div className="col-1">24°</div>
-            <div className="col-1">20°</div>
-            <div className="col-1">23°</div>
-            <div className="col-1">20°</div>
-            <div className="col-1">25°</div>
-            <div className="col-1">20°</div>
-            <div className="col-1">20°</div>
-            <div className="col-1">24°</div>
-          </div>
-        </span>
-      </section>
     </div>
   );
 }
