@@ -68,18 +68,12 @@ h2 {
   font-size: 30px;
   color: #fff;
   text-shadow: 10px;
+  line-height: 1.5;
 }
 
 .city {
   font-size: 40px;
   color: #fff;
-}
-
-h3 {
-  font-size: 40px;
-  color: #fff;
-  text-shadow: 10px;
-  margin-bottom: 10px;
 }
 
 h4 {
