@@ -141,10 +141,10 @@ footer {
 }
 
 footer a {
-  color: antiquewhite;
+  color: aliceblue;
   text-decoration: none;
 }
 
 footer a:hover {
-  color: white;
+  color: rgb(176, 205, 230);
 }
