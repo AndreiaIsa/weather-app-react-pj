@@ -10,3 +10,12 @@
 .WeatherForecast-maximum {
   margin-left: 5px;
 }
+
+@media (max-width: 600px) {
+  .WeatherForecast {
+    width: 250px;
+    padding-bottom: 30px;
+    font-size: 10px;
+    size: 10px;
+  }
+}

@@ -59,6 +59,7 @@ export default function Weather(props) {
         <WeatherInfo data={weatherData} />
 
         <WeatherForecast coordinates={weatherData.coordinates} />
+
         <footer>
           <a
             href="https://github.com/AndreiaIsa/weather-app-react-pj"

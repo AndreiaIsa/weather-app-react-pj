@@ -10,7 +10,7 @@ body {
   margin-bottom: 30px;
   margin-top: 30px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("https://astrotourismwa.com.au/wp-content/uploads/2018/12/Milky-Way-Galaxy-1080x675.jpg");
+    url("/images/background/milkyway.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 600px 700px;
@@ -23,9 +23,10 @@ body {
 }
 
 button {
-  width: 30px;
+  width: 20px;
   font-size: 40px;
   padding: 0;
+  margin-right: 20px;
   border: transparent;
   background-color: transparent;
 }
@@ -130,17 +131,56 @@ li:first-letter {
   font-size: 13px;
 }
 
-footer {
+.Weather footer {
   color: white;
   font-size: 10px;
   margin-top: 40px;
 }
 
-footer a {
+.Weather footer a {
   color: aliceblue;
   text-decoration: none;
 }
 
-footer a:hover {
+.Weather footer a:hover {
   color: rgb(176, 205, 230);
+}
+
+@media (max-width: 600px) {
+  body {
+    background-size: 280px 700px;
+  }
+
+  .search-form {
+    width: 250px;
+  }
+
+  button {
+    width: 10px;
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h1 .celcius {
+    font-size: 30px;
+  }
+
+  h1 .actual-weather {
+    font-size: 30px;
+  }
+
+  h1 .fahrenheit {
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  .city {
+    font-size: 20px;
+  }
 }

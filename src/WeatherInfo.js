@@ -34,9 +34,6 @@ export default function WeatherInfo(props) {
         </div>
         <div className="row">
           <span className="city">{props.data.city}</span>
-          <span className="current-location">
-            <button>🧭</button>
-          </span>
         </div>
         <div className="row">
           <h2 id="date">
