@@ -3,6 +3,7 @@ import axios from "axios";
 
 import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
@@ -18,11 +19,12 @@ export default function Weather(props) {
       date: new Date(response.data.dt * 1000),
       icon: response.data.weather[0].icon,
       city: response.data.name,
+      coordinates: response.data.coord,
     });
   }
 
   function search() {
-    const apiKey = "2a49b45425dfa7f4d04978f73b59d1fd";
+    const apiKey = "cabdbda40038ba7d1165b953b1c7bd6c";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
@@ -56,6 +58,7 @@ export default function Weather(props) {
 
         <WeatherInfo data={weatherData} />
 
+        <WeatherForecast coordinates={weatherData.coordinates} />
         <footer>
           <a
             href="https://github.com/AndreiaIsa/weather-app-react-pj"

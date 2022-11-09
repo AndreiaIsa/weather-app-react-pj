@@ -1,0 +1,11 @@
+.WeatherForecast {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: white;
+}
+
+.WeatherForecast-maximum {
+  margin-left: 5px;
+}
