@@ -11,14 +11,6 @@ export default function WeatherInfo(props) {
         <div className="row">
           <div className="col-12">
             <h1>
-              <span className="actual-weather float-left">
-                <WeatherIcon
-                  code={props.data.icon}
-                  alt={props.data.description}
-                  size={60}
-                />
-              </span>
-
               <WeatherTemperature celcius={props.data.temperature} />
 
               <span className="actual-weather float-right">
