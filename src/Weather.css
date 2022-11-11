@@ -149,7 +149,9 @@ li:first-letter {
 
 @media (max-width: 600px) {
   body {
-    background-size: 280px 700px;
+    background-size: 500px 1000px;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .search-form {
