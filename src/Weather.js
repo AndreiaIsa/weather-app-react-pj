@@ -38,6 +38,17 @@ export default function Weather(props) {
     setCity(event.target.value);
   }
 
+  function searchLocation(position) {
+    let apiKey = "f09d3949047ab6c9e3bcaf79cf61f619";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
+  function getCurrentLocation(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(searchLocation);
+  }
+
   if (weatherData.ready) {
     return (
       <div className="Weather">
@@ -56,10 +67,11 @@ export default function Weather(props) {
           </span>
         </form>
 
+        <button onClick={getCurrentLocation}>🧭</button>
+
         <WeatherInfo data={weatherData} />
 
         <WeatherForecast coordinates={weatherData.coordinates} />
-
         <footer>
           <a
             href="https://github.com/AndreiaIsa/weather-app-react-pj"
